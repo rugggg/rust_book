@@ -1,0 +1,12 @@
+- rust variables immutable
+- the io read_line is more interesting, will append to arg passed. string atgument needs to be mutable, so we use a &reference, it also returns a Result value enum that handles error handling info
+- rust makes using references easy and safe (supposedly)
+- the .expect chain works on the result of the read_line call, which is a Result enum which has an expect method on it
+- expect handles raising the error to crash if read_line fails and if it succeeds, it returns the value result is holding, in this case number of bytes in users input
+- you can also use actual error handling, but not doing so here
+- cargo has sematic verioning
+- "Another neat feature of Cargo is that running the cargo doc --open command will build documentation provided by all your dependencies locally and open it in your browser." - cool!
+- oh the .cmp method with ordering is sick
+- the 'arms' of a compare are sweet!
+- Rust has strong static types but also type inference.
+- this allows a sort of typecasting via Shadowing
